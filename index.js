@@ -49,6 +49,9 @@ client.connect(err => {
             res.send(result.insertedCount > 0);
         })
     })
+    app.get('/', (req,res) => {
+        res.send('Hello, Its Working correctly')
+    })
 });
 
 app.listen(process.env.PORT || port)
